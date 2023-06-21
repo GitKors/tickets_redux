@@ -1,0 +1,155 @@
+.ticket {
+    background-color: #E8EBF2;
+    position: relative;
+    top: -542px;
+    left: 665px;
+    width: 727px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 0px;
+    margin-bottom: 47px;
+    border-radius: 10px;
+}
+
+.price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #4E148C;
+    text-align: center;
+}
+
+.xz {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #858AE3;
+    text-align: center;
+}
+
+.time {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4E148C;
+    text-align: center;
+    margin: 0;
+}
+
+.path {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #858AE3;
+    text-align: center;
+}
+
+.path_time {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4E148C;
+    text-align: center;
+    margin: 0;
+}
+
+.trans {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #858AE3;
+    text-align: center;
+}
+
+.lab_trans {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4E148C;
+    text-align: center;
+    margin: 0;
+}
+
+.road {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4E148C;
+    text-align: center;
+}
+
+.logo_avia {
+    margin-top: 32px;
+}
+
+.right_img {
+    vertical-align: middle;
+    margin-left: 7px;
+}
+
+.icon_to_img {
+    vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+
+
+.div1 {
+     grid-area: 1 / 1 / 2 / 2; 
+}
+
+.div2 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.div5 {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.div6 {
+    grid-area: 1 / 2 / 2 / 3;
+}

@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Inter:wght@700&display=swap');
+
+.filter_net {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+  margin-top: 21px;
+  margin-left: 55px;
+  width: max-content;
+}
+
+.filter_transfer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 272px;
+  height: 258px;
+  background-color: #E8EBF2;
+  border-radius: 10px;
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 20px;
+}
+
+.title_transfer {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4E148C;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.list-check-transfer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter_avia {
+  background-color: #E8EBF2;
+  border-radius: 10px;
+  width: 272px;
+  height: 198px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 20px;
+}
+
+.title-company {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4E148C;
+  text-align: start;
+  margin-top: 19px;
+  margin-left: 19px;
+  margin-bottom: 0;
+}
+
+.list-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #858AE3;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.filter-more {
+  position: relative;
+  right: 120px;
+  /* margin-top: 10px; */
+}
+
+.filter-more button {
+  padding: 10px 20px;
+  background-color: #E8EBF2;
+  color: #4E148C;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  border: 2px solid #4E148C;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  /* margin-right: 10px; */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-more button:hover {
+  background-color: #4E148C;
+  color: #FFFFFF;
+}
+
+.filter-more button.active {
+  background-color: #4E148C;
+  color: #FFFFFF;
+}
+
+ul {
+  align-self: baseline;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.load-more button {
+  padding: 10px 20px;
+  background-color: #4E148C;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.load-more button:hover {
+  background-color: #6F1EA7;
+}
+
+
+.filter_avia input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 2px solid #4E148C;
+  outline: none;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  }
+  
+  .filter_avia input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #4E148C;
+  cursor: pointer;
+  }
+  
+  .filter_transfer input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 21px;
+  height: 21px;
+  border: 2px solid #4E148C;
+  outline: none;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  }
+  
+  .filter_transfer input[type="checkbox"]:checked::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #4E148C;
+  cursor: pointer;
+  }
+
+.filter-more button.active {
+  background-color: #4E148C;
+  color: #FFFFFF;
+  border-color: #4E148C;
+}
+
+.filter-more button.active:hover {
+  background-color: #4E148C;
+  color: #FFFFFF;
+}
+
+#butt1 {
+  width: 242px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#butt2 {
+    width: 242px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#butt3 {
+  width: 243px;
+}
+
+.mob_option {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px)
+and (min-width: 430px)
+ 
+{
+
+  .mob_option {
+    left: 13px;
+    border-radius: 10px;
+    position: relative;
+    top: 125px;
+    width: 695px;
+    height: 44px;
+    background-color: #4E148C;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .mob_option {
+    position: relative;
+    top: 113px;
+    width: 695px;
+    height: 44px;
+    background-color: #4E148C;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    cursor: pointer;
+  }
+  
+  .mob_option .left-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mob_option .left-content span {
+    margin-right: 8px;
+  }
+  
+  .mob_option .right-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mob_option .right-content .settings-label {
+    margin-right: 8px;
+  }
+  
+  .mob_option .right-content .arrow-down {
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    transform: rotate(45deg);
+    margin-left: 8px;
+  }
+  
+  .mob_option:hover {
+    background-color: #5D1B9C;
+  }
+
+  .load_more {
+    position: relative;
+    top: 82px;
+    left: 0px;
+    width: 727px;
+    height: 62px;
+    background: #4E148C;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F7F9F7;
+    cursor: pointer;
+}
+
+
+.ticket {
+  background-color: #E8EBF2;
+    position: relative;
+    top: 100px;
+    left: 13px;
+    width: 727px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 0px;
+    margin-bottom: 47px;
+    border-radius: 10px;
+}
+
+
+
+.filter_net {
+display: flex;
+flex-direction: column-reverse;
+
+
+}
+
+.filter_avia {
+  top: 25px;
+  position: relative;
+  left: -248px;
+  background-color: #4E148C;
+  border-radius: 10px;
+  width: 272px;
+  height: 224px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.filter_transfer {
+  right: -85px;
+  top: -264px;
+  position: relative;
+  width: 432px;
+  height: 224px;
+  background-color: #4E148C;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.title_transfer {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F7F9F7;
+  text-align: start;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.list-check-transfer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: -42px;
+}
+
+
+
+.title-company {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F7F9F7;
+  text-align: start;
+  margin-top: 19px;
+  margin-left: 19px;
+  margin-bottom: 0;
+}
+
+.list-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: -21px;
+}
+
+label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F7F9F7;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.filter-more {
+  position: relative;
+  position: relative;
+  left: -42px;
+}
+
+.filter-more button {
+  padding: 10px 20px;
+  background-color: #E8EBF2;
+  color: #4E148C;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  border: 2px solid #4E148C;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-more button:hover {
+  background-color: #4E148C;
+  color: #FFFFFF;
+}
+
+.filter-more button.active {
+  background-color: #4E148C;
+  color: #FFFFFF;
+}
+
+ul {
+  align-self: baseline;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+.load-more {
+  position: relative;
+  top: 85px;
+  left: 0;
+  width: 727px;
+  height: 62px;
+  background: #4E148C;
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F7F9F7;
+  cursor: pointer;
+}
+
+.load-more button {
+  padding: 10px 20px;
+  background-color: #4E148C;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.load-more button:hover {
+  background-color: #6F1EA7;
+}
+
+
+.filter_avia input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 2px solid #F7F9F7;
+  outline: none;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  }
+  
+.filter_avia input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #F7F9F7;
+  cursor: pointer;
+  }
+  
+.filter_transfer input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 21px;
+  height: 21px;
+  border: 2px solid #F7F9F7;
+  outline: none;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  }
+  
+.filter_transfer input[type="checkbox"]:checked::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #F7F9F7;
+  cursor: pointer;
+  }
+
+.filter-more button.active {
+  background-color: #4E148C;
+  color: #FFFFFF;
+  border-color: #4E148C;
+}
+
+.filter-more button.active:hover {
+  background-color: #4E148C;
+  color: #FFFFFF;
+}
+
+#butt1 {
+  width: 242px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#butt2 {
+    width: 242px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#butt3 {
+  width: 243px;
+}
+  
+
+}
+

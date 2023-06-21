@@ -1,0 +1,38 @@
+.load_more {
+    position: relative;
+    top: -440px;
+    left: 668px;
+    width: 727px;
+    height: 62px;
+    background: #4E148C;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F7F9F7;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px)
+and (min-width: 430px)
+{
+.load_more {
+    position: relative;
+    top: 85px;
+    left: 13px;
+    width: 727px;
+    height: 62px;
+    background: #4E148C;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F7F9F7;
+    cursor: pointer;
+}
+
+}
